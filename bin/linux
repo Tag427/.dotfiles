@@ -10,7 +10,7 @@ fi
 # This line creates the .TRASH directory
 mkdir -p ~/.TRASH
 # These lines make sure the .vimrc file exists and if it does it renames is to .bup_vimrc and then sends a message to linuxsetup.log saying the name was changed
-if [[ -f "$HOME/.vimrc" ]]; then 
+if [[ -f "$HOME/.vimrc"]]; then 
 	mv ~/.vimrc ~/.bup_vimrc
 	echo ".vimrc was renamed to .bup_vimrc" > linuxsetup.log
 fi	
